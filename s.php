@@ -1,5 +1,4 @@
 <FONT FACE=VERDANA SIZE=1>
-
 <?php
 $du="dbusername.goes.here";
 $dp="dbpassword.here";
@@ -19,7 +18,6 @@ echo "$sq";
 
 $re = $my->query($sq);
 
-
 if ($re->num_rows > 0) {
   while($row = $re->fetch_assoc()) {
     echo $row["time"] . " <B>#</B> " . $row["ip"]. " <B>#</B> " . $row["agent"]. "<br>";
@@ -31,4 +29,3 @@ if ($re->num_rows > 0) {
 $my -> close();
 ?>
 </FONT>
-
